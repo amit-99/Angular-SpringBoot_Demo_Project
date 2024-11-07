@@ -9,9 +9,15 @@
 
 
 
+<app-navbar></app-navbar>
 <main class="main">
-  {{message}}
+  <div class="content">
+    {{ message }}
+  </div>
 </main>
+
+<router-outlet></router-outlet>
+
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
@@ -22,4 +28,3 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
-<router-outlet />

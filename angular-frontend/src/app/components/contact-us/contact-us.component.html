@@ -1,0 +1,17 @@
+<!-- src/app/contact-us/contact-us.component.html -->
+<div class="container">
+  <h1>Contact Us</h1>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input id="name" formControlName="name" type="text" placeholder="Your name" />
+
+    <label for="email">Email:</label>
+    <input id="email" formControlName="email" type="email" placeholder="Your email" />
+
+    <label for="message">Message:</label>
+    <textarea id="message" formControlName="message" rows="4" placeholder="Your message"></textarea>
+
+    <button type="submit" [disabled]="contactForm.invalid">Submit</button>
+    <p *ngIf="responseMessage">{{ responseMessage }}</p>
+  </form>
+</div>

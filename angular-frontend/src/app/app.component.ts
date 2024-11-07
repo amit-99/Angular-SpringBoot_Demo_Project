@@ -4,7 +4,8 @@ import { HelloService } from './services/hello.service';
 
 @Component({
   selector: 'app-root',
-  template: `<h1>{{ message }}</h1>`,
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
   message = '';

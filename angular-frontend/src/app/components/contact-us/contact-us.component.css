@@ -1,0 +1,13 @@
+/* src/app/contact-us/contact-us.component.css */
+.container {
+  max-width: 500px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-weight: bold;
+  color: #333;
+}
